@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    padding: 0px;
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-color: antiquewhite;
+    border: 5px dashed #aa4;
+}
+#player{
+    background-color: blueviolet;
+    border:4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 29px;
+    position: absolute;
+    transition: all 0.3s;
+}
+.pointer{
+    background-color: dimgrey;
+    height: 50px;
+    margin-top: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
