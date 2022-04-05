@@ -6,7 +6,7 @@ var puntosObjetivo=30;
 
 function sumarPuntos(){
  puntos++;
- document.getElementById("score").innerHTML= "PUNTOS: <b>"+puntos+ "/"+puntosObjetivo+"</b>";
+ //En esta linea lo que se esta haciendo es sacando un numero random para posicionar la posicion de la pelota con respecto al margin Top
  let ranNum= Math.round(Math.random()*500);
  let ranNum2= Math.round(Math.random()*500);
  document.getElementById("player").style.marginTop=ranNum+"px";
@@ -18,7 +18,8 @@ function sumarPuntos(){
 
 function restarTiempo(){
     tiempo--;
-    document.getElementById("time").innerHTML=" Tiempo: "+tiempo+ " ";
+    document.getElementById("score").innerHTML= "PUNTOS: <b>"+puntos+"/"+puntosObjetivo+"</b>";
+    document.getElementById("time").innerHTML=" Tiempo:29"
     if(tiempo==0){
         alert("Perdiste!");
         tiempo=30;
@@ -26,4 +27,4 @@ function restarTiempo(){
     }
 }
 
-setTimeout(restarTiempo,500);
+setInterval(restarTiempo,500);

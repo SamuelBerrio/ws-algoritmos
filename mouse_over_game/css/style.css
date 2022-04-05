@@ -1,7 +1,7 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Courier New', Courier, monospace;
+* {
+    padding: 10px;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -9,19 +9,21 @@
     margin: auto;
     width: 700px;
     height: 700px;
-    background-color: antiquewhite;
-    border: 5px dashed #aa4;
+    background-color: plum;
+    border: 5px dashed blue;
 }
-#player{
-    background-color: blueviolet;
-    border:4px;
+
+#player {
+    background-color: white;
+    border: 4px;
     width: 40px;
     height: 40px;
     border-radius: 29px;
     position: absolute;
     transition: all 0.3s;
 }
-.pointer{
+
+.pointer {
     background-color: dimgrey;
     height: 50px;
     margin-top: 30px;
@@ -30,4 +32,13 @@
     font-size: 20px;
     text-align: center;
     padding: 10px 0px;
+}
+
+.contenedor-prueba {
+    border-bottom: 10px;
+border-color: black;
+border-width: 10px;
+font-size: 50px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding-left: 8em;
 }
