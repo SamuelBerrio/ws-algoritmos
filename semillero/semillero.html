@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semillero</title>
+</head>
+
+<body>
+  <div>
+    <div style="padding-left: 500px;" style="background-color: black;">
+      <h1 style="color: aqua;">Inscripcion Semillero</h1>
+    </div>
+
+    <p style="background-color:antiquewhite;" style=" width: 100px;">
+      Diseñe en Javascript un programa que permita resolver el
+      siguiente problema:
+      Validar los estudiantes que se inscriben al semillero y premiar con el pago de la
+      inscripción bajo las siguientes condiciones:
+      • los estudiantes deben vivir en Armenia
+      • solo se pueden inscribir estudiantes de grado 10 o 11
+      • el primer estudiante en registrarse en el semillero tiene derecho al formulario
+      de inscripción de manera gratuita. (se le debe indicar al usuario)
+      El programa debe indicar al usuario si pudo ser realizada la inscripción y si tiene
+      algún beneficio, así mismo informar el costo que tendrá la inscripción, utilice el
+      valor de $100.000 como tarifa plena a pagar.
+      No es necesario que haga un diseño sofisticado en html, reciba los datos
+      utilizando prompt, y muestre los resultados en una alerta.</p>
+  </div>
+  <script lang="JavaScript">
+    for (var i = 0; i < 3; i++) {
+      let nombre = prompt("Ingrese su nombre");
+      let ciudad = prompt(nombre + ", ¿En que ciudad vive? (MAYUSCULA)");
+      let grado = prompt("Ingrese el grado en el que se encuentra");
+      evaluacion(ciudad, grado, i);
+      alert(mensaje);
+    }
+    function evaluacion(ciudad, grado, i) {
+      if (ciudad == "ARMENIA" && (grado == 10 || 11) && i == 0) {
+        mensaje = "Su inscripcion fue admitida y por ser la primera persona en inscribirse, su incripcion es gratuita";
+      } else if (ciudad == "ARMENIA" && (grado == 10 || 11)) {
+        mensaje = "Su inscripcion fue admitida y tiene un valor de 100.000$";
+      } else {
+        mensaje = "Su incripcion no es admitida por no cumplir los requisitos";
+      }
+      return mensaje;
+    }
+
+  </script>
+</body>
+
+</html>
