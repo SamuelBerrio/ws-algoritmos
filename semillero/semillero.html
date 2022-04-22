@@ -10,28 +10,31 @@
 
 <body>
   <div>
-    <div style="padding-left: 500px;" style="background-color: black;">
-      <h1 style="color: aqua;">Inscripcion Semillero</h1>
+    <div style="padding-left: 450PX;">
+      <h1 style="color: aqua;" style="background-color: antiquewhite;">Inscripcion Semillero</h1>
     </div>
-
-    <p style="background-color:antiquewhite;" style=" width: 100px;">
-      Diseñe en Javascript un programa que permita resolver el
-      siguiente problema:
-      Validar los estudiantes que se inscriben al semillero y premiar con el pago de la
-      inscripción bajo las siguientes condiciones:
-      • los estudiantes deben vivir en Armenia
-      • solo se pueden inscribir estudiantes de grado 10 o 11
-      • el primer estudiante en registrarse en el semillero tiene derecho al formulario
-      de inscripción de manera gratuita. (se le debe indicar al usuario)
-      El programa debe indicar al usuario si pudo ser realizada la inscripción y si tiene
-      algún beneficio, así mismo informar el costo que tendrá la inscripción, utilice el
-      valor de $100.000 como tarifa plena a pagar.
-      No es necesario que haga un diseño sofisticado en html, reciba los datos
-      utilizando prompt, y muestre los resultados en una alerta.</p>
+    <div style="padding-top: 40px;">
+      <p style="background-color:antiquewhite;" style=" width: 100px;">
+        Diseñe en Javascript un programa que permita resolver el
+        siguiente problema:
+        Validar los estudiantes que se inscriben al semillero y premiar con el pago de la
+        inscripción bajo las siguientes condiciones:
+        • los estudiantes deben vivir en Armenia
+        • solo se pueden inscribir estudiantes de grado 10 o 11
+        • el primer estudiante en registrarse en el semillero tiene derecho al formulario
+        de inscripción de manera gratuita. (se le debe indicar al usuario)
+        El programa debe indicar al usuario si pudo ser realizada la inscripción y si tiene
+        algún beneficio, así mismo informar el costo que tendrá la inscripción, utilice el
+        valor de $100.000 como tarifa plena a pagar.
+        No es necesario que haga un diseño sofisticado en html, reciba los datos
+        utilizando prompt, y muestre los resultados en una alerta.</p>
+    </div>
   </div>
   <script lang="JavaScript">
-    for (var i = 0; i < 3; i++) {
+    let repeticiones = prompt("¿Cuantas personas se van a inscribir?");
+    for (var i = 0; i < repeticiones + 1; i++) {
       let nombre = prompt("Ingrese su nombre");
+      //Especifique que ingrese en mayuscula ya que al ingresar .toLocalUpperCase no me esta funcionando
       let ciudad = prompt(nombre + ", ¿En que ciudad vive? (MAYUSCULA)");
       let grado = prompt("Ingrese el grado en el que se encuentra");
       evaluacion(ciudad, grado, i);
