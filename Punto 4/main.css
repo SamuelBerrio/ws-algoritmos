@@ -1,0 +1,35 @@
+.titulo {
+    background-color: aquamarine;
+}
+
+#letraT {
+    margin-left: 450px;
+}
+
+.divlista {
+    padding: 0px;
+    margin: auto;
+    width: 700px;
+    height: auto;
+    border: 5px dashed black;
+}
+
+.lista {
+    padding: auto;
+}
+
+.botones {
+    margin-left: 20px;
+}
+
+
+#compra {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+.montodiv {
+    width: auto;
+}

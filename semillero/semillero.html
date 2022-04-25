@@ -36,7 +36,7 @@
       let nombre = prompt("Ingrese su nombre");
       //Especifique que ingrese en mayuscula ya que al ingresar .toLocalUpperCase no me esta funcionando
       let ciudad = prompt(nombre + ", ¿En que ciudad vive? (MAYUSCULA)");
-      let grado = prompt("Ingrese el grado en el que se encuentra");
+      let grado = parseInt(prompt("Ingrese el grado en el que se encuentra"));
       evaluacion(ciudad, grado, i);
       alert(mensaje);
     }
