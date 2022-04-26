@@ -1,17 +1,21 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .titulo {
     background-color: aquamarine;
 }
 
 #letraT {
-    margin-left: 450px;
+    text-align: center;
 }
 
 .divlista {
+    background-color: antiquewhite;
     padding: 0px;
     margin: auto;
     width: 700px;
     height: auto;
-    border: 5px dashed black;
+    border: 5px groove black;
 }
 
 .lista {
@@ -26,10 +30,26 @@
 #compra {
     margin-top: 20px;
     margin-bottom: 15px;
-    margin-left: 300px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+#descuento {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 150px;
     border-radius: 10px;
 }
 
 .montodiv {
+    margin-top: 10px;
     width: auto;
+    background-color: aquamarine;
+    border: 5px groove black;
+}
+.fondo{
+    background-image: url(https://i.blogs.es/0baa91/39f95492-38ee-4f16-92e1-ba5161f4a958/450_1000.jpeg);
+}
+#montodiv2{
+    margin-left: 20px;
 }

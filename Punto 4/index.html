@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <title>Tienda</title>
 </head>
 
-<body>
+<body class="fondo">
     <div class="titulo">
         <h1 id="letraT">Bienvenido a la tienda</h1>
     </div>
@@ -24,11 +24,17 @@
             <li> Fruta mix (50 unidades) = 5000 c/u <button id="boton4">Añadir al carrito</button></li>
         </ul>
         <div>
-            <button id="compra"> Comprar </button>
+            <button id="compra"> Comprar </button><button id="descuento"> Descuento </button>
         </div>
     </div>
     <div class="montodiv">
-        <h3>Monto total: 0$</h3>
+        <div id="montodiv2">
+            <p>Monto total:</p>
+            <p id="monto">0 $</p>
+            <br>
+            <p>Monto total con descuento:</p>
+            <p id="descuent">0 $</p>
+        </div>
     </div>
     <script src="programa.js"></script>
 </body>
