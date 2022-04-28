@@ -15,16 +15,38 @@
     </div>
     <div class="divlista">
         <ul class="lista">
-            <li> Huevos (30 canastas) = 15000 c/u <button id="boton1">Añadir al carrito</button></li>
+            <li> Huevos (<b id="huevos">1</b> canastas) = <b id="huevos2">15000</b> c/u
+                <div class="centrarB"><button id="boton1">Añadir al carrito</button>
+                    <button class="posicionMM" id="Mhuevos"> + </button>
+                    <button class="posicionMM" id="mhuevos"> - </button>
+                </div>
+            </li>
             <br>
-            <li> Leche (20 unidades) = 3500 c/u <button id="boton2">Añadir al carrito</button></li>
+            <li> Leche (<b id="leche">1</b> unidades) = <b id="leche2">3500</b> c/u
+                <div class="centrarB"><button id="boton2">Añadir al carrito</button>
+                    <button class="posicionMM" id="Mleche"> + </button>
+                    <button class="posicionMM" id="mleche"> - </button>
+                </div>
+            </li>
             <br>
-            <li> Pan (50 unidades) = 2000 c/u <button id="boton3">Añadir al carrito</button></li>
+            <li> Pan (<b id="pan">1</b> unidades) = <b id="pan2">2000</b> c/u
+                <div class="centrarB">
+                    <button id="boton3">Añadir al carrito</button>
+                    <button class="posicionMM" id="Mpan"> + </button>
+                    <button class="posicionMM" id="mpan"> - </button>
+                </div>
+            </li>
             <br>
-            <li> Fruta mix (50 unidades) = 5000 c/u <button id="boton4">Añadir al carrito</button></li>
+            <li> Fruta mix (<b id="fruta">1</b> unidades) = <b id="fruta2">5000</b> c/u
+                <div class="centrarB">
+                    <button id="boton4">Añadir al carrito</button>
+                    <button class="posicionMM" id="Mfruta"> + </button>
+                    <button class="posicionMM" id="mfruta"> - </button>
+                </div>
+            </li>
         </ul>
-        <div>
-            <button id="compra"> Comprar </button><button id="descuento"> Descuento </button>
+        <div class="flex-container">
+            <button id="compra"> Comprar </button><button id="descuento"> Descuento </button><button id="Rproductos"> Reiniciar Valores </button>
         </div>
     </div>
     <div class="montodiv">
@@ -34,6 +56,7 @@
             <br>
             <p>Monto total con descuento:</p>
             <p id="descuent">0 $</p>
+            <img class="imgCarrito" src="imgs/carrito.png" alt="Carrito de compras">
         </div>
     </div>
     <script src="programa.js"></script>

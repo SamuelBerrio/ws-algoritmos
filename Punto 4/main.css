@@ -1,8 +1,10 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .titulo {
     background-color: aquamarine;
+    border: 5px groove black;
 }
 
 #letraT {
@@ -28,17 +30,44 @@
 
 
 #compra {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 200px;
     border-radius: 10px;
 }
 
+#compra:hover {
+    cursor: pointer;
+    border-radius: 3px solid rgb(79, 252, 229);
+    box-shadow: 0 0 5px rgb(79, 252, 229),
+        0 0 10px rgb(79, 252, 229),
+        0 0 30px rgb(79, 252, 229),
+        0 0 100px rgb(79, 252, 229);
+}
+
 #descuento {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 150px;
+    margin-left: 20px;
     border-radius: 10px;
+}
+
+#descuento:hover {
+    cursor: pointer;
+    border-radius: 3px solid rgb(79, 252, 229);
+    box-shadow: 0 0 5px rgb(79, 252, 229),
+        0 0 10px rgb(79, 252, 229),
+        0 0 30px rgb(79, 252, 229),
+        0 0 100px rgb(79, 252, 229);
+}
+
+#Rproductos {
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#Rproductos:hover {
+    cursor: pointer;
+    border-radius: 3px solid rgb(79, 252, 229);
+    box-shadow: 0 0 5px rgb(79, 252, 229),
+        0 0 10px rgb(79, 252, 229),
+        0 0 30px rgb(79, 252, 229),
+        0 0 100px rgb(79, 252, 229);
 }
 
 .montodiv {
@@ -47,9 +76,38 @@
     background-color: aquamarine;
     border: 5px groove black;
 }
-.fondo{
-    background-image: url(https://i.blogs.es/0baa91/39f95492-38ee-4f16-92e1-ba5161f4a958/450_1000.jpeg);
+
+.fondo {
+    background-image: url(https://pqs.pe/wp-content/uploads/2021/02/PQS-Bodega-consejos-para-abrir-una-tienda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-#montodiv2{
+
+#montodiv2 {
     margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imgCarrito {
+    width: 70px;
+}
+
+.posicionMM {
+    margin-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.centrarB {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

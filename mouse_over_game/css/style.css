@@ -7,10 +7,10 @@
 .container {
     padding: 0px;
     margin: auto;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 400px;
     background-color: plum;
-    border: 5px dashed blue;
+    border: 5px groove black;
 }
 
 #player {
@@ -40,5 +40,12 @@ border-color: black;
 border-width: 10px;
 font-size: 50px;
 font-family: Georgia, 'Times New Roman', Times, serif;
-padding-left: 8em;
+text-align: center;
+color: aliceblue;
+}
+.fondo{
+    background-image: url(https://cdn.forbes.com.mx/2019/04/espacio.jpg1_.jpg);
+}
+.centrar{
+    margin-bottom: 200px;
 }

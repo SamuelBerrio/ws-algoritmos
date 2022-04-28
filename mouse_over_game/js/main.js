@@ -7,8 +7,8 @@ var puntosObjetivo=30;
 function sumarPuntos(){
  puntos++;
  //En esta linea lo que se esta haciendo es sacando un numero random para posicionar la posicion de la pelota con respecto al margin Top
- let ranNum= Math.round(Math.random()*500);
- let ranNum2= Math.round(Math.random()*500);
+ let ranNum= Math.round(Math.random()*300);
+ let ranNum2= Math.round(Math.random()*200);
  document.getElementById("player").style.marginTop=ranNum+"px";
  document.getElementById("player").style.marginLeft=ranNum+"px";
  if(puntos==30){
