@@ -1,0 +1,34 @@
+#lista {
+    border: 5px groove black;
+    background-color: blanchedalmond;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+#botones {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#total {
+    border: 5px groove black;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: teal;
+}
+
+.registro {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ul {
+    margin-bottom: 30px;
+}
