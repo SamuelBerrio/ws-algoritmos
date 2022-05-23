@@ -12,66 +12,59 @@
 
 <body>
     <div class="nav">
-        <input id="buscador" placeholder="Buscar Producto"><h1 id="titulo">Almacenamiento de Tienda</h1>
+        <input id="buscador" placeholder="Buscar Producto"><button id="buscar" onclick="buscar();">Buscar</button>
+        <h1 id="titulo">Almacenamiento de Tienda</h1>
     </div>
     <br>
     <div class="form">
-        <form class="form2">
-            <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Categoria</option>
-                    <option value="1">Tecnologia</option>
-                    <option value="2">Alimentos</option>
-                    <option value="3">Ropa</option>
-                </select>
-            </div>
-            <br>
-            <div class="mb-3">
-                <input  class="form-control" placeholder="Ingrese en producto" >
-            </div>
-            <br>
-            <div>
-                <input class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
-            </div>
-            <br>
-            <div id="Mm">
-                <b>Precio:</b>
-                <button id="M" class="botones">+</button><button id="m" class="botones">-</button><b id="valor">0</b><b id="tilin">$</b>
-            </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-        </form>
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" id="select">
+                <option selected value="Sin Categoria definida">Categoria</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Ropa">Ropa</option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <input class="form-control" placeholder="Ingrese en producto" id="producto">
+        </div>
+        <br>
+        <div>
+            <input class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
+        </div>
+        <br>
+        <div>
+            <input class="form-control" placeholder="Ingrese el precio" id="valor">
+        </div>
+        <div id="BotonesA">
+            <button type="submit" class="btn btn-primary" id="AI" onclick="capturar2()">Agregar al
+                inicio</button><button type="submit" class="btn btn-primary" onclick="capturar();">Agregar</button>
+        </div>
     </div>
     <br>
-    <div id="tabla">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
+    <div id="acomodar">
+        <table class="table" id="tabla">
+            <thead style="background-color: antiquewhite;">
+                <tr>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
+
             </tbody>
-          </table>
+        </table>
+    </div>
+    <div id="Binfo">
+        <button id="EE" class="acomodar">Editar existencia de un producto</button>
+        <button id="OA" class="acomodar">Ordenar alfabeticamente</button>
+        <button id="IPC" class="acomodar">Informar cuántos productos hay por categoría</button>
+        <button id="ICP" class="acomodar">Informar la cantidad total de productos</button>
+        <button id="IVP" class="acomodar">Informar el valor total de todos los productos que hay en la tienda</button>
+        <button id="EP" class="acomodar">Eliminar Producto</button>
     </div>
     <script src="js/almacen.js"></script>
 </body>

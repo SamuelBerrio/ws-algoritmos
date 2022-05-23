@@ -3,34 +3,27 @@
 }
 
 .form {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
 }
 
 .form2 {
     text-align: center;
+    border-bottom: 5px groove black;
 }
 
 #titulo {
-    font-size: x-large;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    margin-left: 300px;
+font-size: 30px;
+position: absolute;
+margin-top: 20px;
+left: 50%;
+transform: translate(-50%);
 }
 
-#Mm {
-    padding-right: 600px;
-}
-
-#M {
-    margin-right: 10px;
-    margin-left: 5px;
-}
-
-#m {
-    padding-left: 5px;
-    margin-right: 20px;
+#valor{
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 #tilin {
@@ -50,7 +43,41 @@
 
 #tabla {
     margin-top: 100px;
+    border: 2px groove black;
+}
+
+#acomodar {
     margin-left: 100px;
     margin-right: 100px;
-    border: 2px groove black;
+}
+
+#buscar {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    width: 80px;
+}
+
+#AI {
+    margin-right: 20px;
+}
+
+#Binfo {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.acomodar {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #318aac !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
 }
