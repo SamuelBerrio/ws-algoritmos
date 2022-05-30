@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <title>Almacenamiento Tienda</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <input id="buscador" placeholder="Buscar Producto"><button id="buscar" onclick="buscar();">Buscar</button>
+            <header>
+                <h1 id="titulo">Almacenamiento de Tienda</h1>
+            </header>
+        </div>
+    </nav>
+    <br>
+    <div class="form">
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" id="select">
+                <option selected value="Sin Categoria definida">Categoria</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Ropa">Ropa</option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <input class="form-control" placeholder="Ingrese en producto" id="producto">
+        </div>
+        <br>
+        <div>
+            <input class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
+        </div>
+        <br>
+        <div>
+            <input class="form-control" placeholder="Ingrese el precio" id="valor">
+        </div>
+        <div id="BotonesA">
+            <button type="submit" class="btn btn-primary" id="AI" onclick="capturar2()">Agregar al
+                inicio</button><button type="submit" class="btn btn-primary" onclick="capturar();">Agregar</button>
+        </div>
+    </div>
+    <br>
+    <div id="acomodar">
+        <table class="table" id="tabla">
+            <thead style="background-color: antiquewhite;">
+                <tr>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div id="Binfo">
+        <button id="IVP" class="acomodar">Informar el valor total de todos los productos que hay en la tienda</button>
+        <button id="IPC" class="acomodar">Informar cuántos productos hay por categoría</button>
+        <button id="ICP" class="acomodar">Informar la cantidad total de productos</button>
+        <button id="EE" class="acomodar">Editar existencia de un producto</button>
+        <button id="ET" class="acomodar">Sumar 500 a todos los valores</button>
+        <button id="OA" class="acomodar">Ordenar alfabeticamente</button>
+        <button id="EP" class="acomodar">Eliminar Producto</button>
+
+
+    </div>
+    <script src="js/almacen.js"></script>
+</body>
+
+</html>
