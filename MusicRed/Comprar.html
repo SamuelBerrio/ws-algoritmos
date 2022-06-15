@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/acomodar.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>MusicWeb</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MusicWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="MusicWeb.html">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="IniciarSesion.html">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comprar.html">Comprar Instrumentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CrearPerfil.html">Crea Tu Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Carrito.html"><img src="imgs/Carrito.png"
+                                style="width: 12%; margin-left: 20px;"></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Buscar Instrumental">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="TablaInfo">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cuenta Actual :
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="UserActual">
+                Sin Iniciar Sesion
+            </li>
+        </ul>
+    </div>
+    <div class="AcomodarBeats">
+        <div>
+            <img src="imgs/No confio.png" class="Portadas">
+            <div class="DescripcionBeat">
+                <h4>No confio</h4>
+                <p>Duracion: 2:25</p>
+                <p>Precio: 100$</p>
+            </div>
+            <audio controls class="Audio">
+                <source src="Instrumentales/No confio.mp3" type="audio/mp3">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <button class="btn btn-primary" style="margin-left: 20px; width: 20%; margin-bottom: 40px;">Añadir al
+                carrito</button>
+        </div>
+    </div>
+    <div class="AcomodarBeats">
+        <div>
+            <img src="imgs/Se comenta.jpg" class="Portadas">
+            <div class="DescripcionBeat">
+                <h4>Se comenta</h4>
+                <p>Duracion: 2:25</p>
+                <p>Precio: 160$</p>
+            </div>
+            <audio controls class="Audio">
+                <source src="Instrumentales/Se comenta.mp3" type="audio/mp3">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <button class="btn btn-primary" style="margin-left: 20px; width: 20%; margin-bottom: 40px;">Añadir al
+                carrito</button>
+        </div>
+    </div>
+    <div class="AcomodarBeats">
+        <div>
+            <img src="imgs/Solitario.jpg" class="Portadas">
+            <div class="DescripcionBeat">
+                <h4>Solitario</h4>
+                <p>Duracion: 2:18</p>
+                <p>Precio: 70$</p>
+            </div>
+            <audio controls class="Audio">
+                <source src="Instrumentales/Solitario.mp3" type="audio/mp3">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <button class="btn btn-primary" style="margin-left: 20px; width: 20%; margin-bottom: 40px;">Añadir al
+                carrito</button>
+        </div>
+    </div>
+    <div class="AcomodarBeats">
+        <div>
+            <img src="imgs/Una vez.png" class="Portadas">
+            <div class="DescripcionBeat">
+                <h4>Una vez</h4>
+                <p>Duracion: 2:25</p>
+                <p>Precio: 240$</p>
+            </div>
+            <audio controls class="Audio">
+                <source src="Instrumentales/Una vez.mp3" type="audio/mp3">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <button class="btn btn-primary" style="margin-left: 20px; width: 20%; margin-bottom: 40px;">Añadir al
+                carrito</button>
+        </div>
+    </div>
+    <script src="Completar.js" type="module"></script>
+</body>
+
+</html>
