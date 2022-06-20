@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/acomodar.css'>
+    <title>MusicWeb</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MusicWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="MusicWeb.html">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="IniciarSesion.html">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CrearPerfil.html">Crea Tu Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comprar.html">Comprar Instrumentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Carrito.html"><img src="imgs/Carrito.png"
+                                style="width: 12%; margin-left: 20px;"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="TablaInfo">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cuenta Actual :
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="UserActual">
+                Sin Iniciar Sesion
+            </li>
+        </ul>
+    </div>
+    <div class="AcomodarCP">
+        <legend>Inicio de Sesion</legend>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Usuario</label>
+            <input  class="form-control" id="UsuarioI" aria-describedby="emailHelp"
+                placeholder="Ingresar Usuario">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
+            <input type="password" class="form-control" id="ContraseñaI" placeholder="Contraseña">
+        </div>
+        <button class="btn btn-primary" style="margin-top: 20px;" id="IniciarSesion">Iniciar Sesion</button>
+    </div>
+    <script src="js/IniciarSesion.js"></script>
+    <script src="js/Completar.js"></script>
+</body>
+
+</html>
